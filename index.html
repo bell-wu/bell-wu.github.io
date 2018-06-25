@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>bell wu</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- popover scripts-->
+    <script>$(function () {$('[data-toggle="popover"]').popover()})</script>
+    <script>$('.popover-dismiss').popover({trigger: 'focus'})</script>
+    <script>$(document).on('click', function (e) {
+        $('[data-toggle="popover"],[data-original-title]').each(function () {
+            //the 'is' for buttons that trigger popups
+            //the 'has' for icons within a button that triggers a popup
+            if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {                
+                (($(this).popover('hide').data('bs.popover')||{}).inState||{}).click = false  // fix for BS 3.3.6
+            }
+    
+        });
+    });</script>
+</head>
+<body>
+
+<div class="container">
+<nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+        <div class="navbar-brand">
+            <span class="navbar-brand mb-0 h1">bell wu</span>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About Me</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="resume.pdf">Resume</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+</div>
+
+<div class="container give-me-some-space">
+    <div class="d-none d-md-block">
+        <br><br><br>
+    </div>
+</div>
+
+<div class="container padding">
+    <div class="row padding main-stuff">
+        <div class="col-lg-6 profile-picture">
+            <img src="img/circle.png" class="img-fluid">
+        </div>
+        <div class="col-lg-6 welcome my-auto">
+            <h1>Hello There!</h1>
+            <p>Welcome to my website!</p>
+            <p>I'm Bell, and here is where you'll get to know me.</p>
+            <p>Although this website is currently under construction, feel free to take a look around.</p>               
+            <hr class="my-4">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-link contact-button" data-toggle="popover" data-html="true" data-placement="bottom"
+                data-content="<div class='contact-text'>https://m.me/possibelly</div>"><i class="fab fa-facebook-messenger"></i></button>
+                <button type="button" class="btn btn-link contact-button" data-toggle="popover" data-html="true" data-placement="bottom"
+                data-content="<div class='contact-text'>https://www.instagram.com/possibelly</div>"><i class="fab fa-instagram"></i></button>
+                <button type="button" class="btn btn-link contact-button" data-toggle="popover" data-html="true" data-placement="bottom"
+                data-content="<div class='contact-text'>wu.bell0322@gmail.com</div><div class='contact-text'>wu.bell@berkeley.edu</div>"><i class="fa fa-envelope"></i></button>
+                <button type="button" class="btn btn-link contact-button" data-toggle="popover" data-html="true" data-placement="bottom"
+                data-content="<a class='contact-text'>https://www.linkedin.com/in/bell-wu</a>"><i class="fab fa-linkedin"></i></button>
+                <button type="button" class="btn btn-link contact-button" data-toggle="popover" data-html="true" data-placement="bottom"
+                data-content="<div class='contact-text'>https://github.com/bell-wu</div>"><i class="fab fa-github"></i></button>
+
+                <!--
+                <a tabindex="0" class="btn btn-link contact-button" role="button" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-html="true"
+                data-content="<div class='contact-text'>https://github.com/bell-wu <a href='https://github.com/bell-wu'>visit</a></div>"><i class="fab fa-github"></i></a>
+                -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
