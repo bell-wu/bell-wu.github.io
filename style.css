@@ -35,8 +35,13 @@ html, body {
   line-height: 1;
 }
 
-.contact-text {
+.contact-bubble {
   font-family: 'Fira Sans', sans-serif;
+  text-align: center;
+}
+
+.contact-text:hover {
+  text-decoration: none;
 }
 
 .fa-facebook-messenger {
