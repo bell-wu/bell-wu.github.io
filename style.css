@@ -12,6 +12,10 @@ html, body {
   width: 65%;
 }
 
+.lastly {
+  width: 45%;
+}
+
 .profile-picture img {
   max-height: 500px;
 }
