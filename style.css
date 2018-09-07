@@ -40,10 +40,6 @@ html, body {
   text-align: center;
 }
 
-.contact-text:hover {
-  text-decoration: none;
-}
-
 .fa-facebook-messenger {
   color: #0084ff;
   /*color: #3B5998;*/
