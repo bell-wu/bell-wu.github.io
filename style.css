@@ -12,6 +12,10 @@ html, body {
   width: 65%;
 }
 
+#projects {
+  text-align: left;
+}
+
 .lastly {
   width: 45%;
 }
