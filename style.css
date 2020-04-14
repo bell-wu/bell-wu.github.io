@@ -73,7 +73,8 @@ html, body {
 .fa-instagram,
 .fa-envelope,
 .fa-linkedin,
-.fa-github {
+.fa-github,
+.fa-hand-peace {
   opacity: 0.6; 
   
   transition: opacity .6s ease-out;
@@ -86,7 +87,8 @@ html, body {
 .fa-instagram:hover,
 .fa-envelope:hover,
 .fa-linkedin:hover,
-.fa-github:hover {
+.fa-github:hover,
+.fa-hand-peace:hover {
   opacity: 1.0;
 
   transition: opacity .6s ease-out;
